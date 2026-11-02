@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 150" width="1000" height="150" role="img" aria-label="Impact: 10+ years, 70+ teams on a shared EKS platform, 99.99% uptime, about 20% lower cloud spend">
+  <style>
+    .t { font-family: -apple-system, "Segoe UI", Helvetica, Arial, sans-serif; }
+    .bar { animation: grow 2.4s ease-out infinite alternate; transform-box: fill-box; transform-origin: left; }
+    @keyframes grow { from { transform: scaleX(.35) } to { transform: scaleX(1) } }
+  </style>
+  <g class="t">
+    <rect x="0" y="0" width="238" height="150" rx="16" fill="#0b1026"/>
+    <rect class="bar" x="24" y="28" width="60" height="4" rx="2" fill="#22d3ee"/>
+    <text x="24" y="86" fill="#ffffff" font-size="44" font-weight="800">10+</text>
+    <text x="24" y="116" fill="#94a3b8" font-size="14">years on cloud platforms</text>
+
+    <rect x="254" y="0" width="238" height="150" rx="16" fill="#0b1026"/>
+    <rect class="bar" x="278" y="28" width="60" height="4" rx="2" fill="#14b8a6"/>
+    <text x="278" y="86" fill="#ffffff" font-size="44" font-weight="800">70+</text>
+    <text x="278" y="116" fill="#94a3b8" font-size="14">teams on one EKS platform</text>
+
+    <rect x="508" y="0" width="238" height="150" rx="16" fill="#0b1026"/>
+    <rect class="bar" x="532" y="28" width="60" height="4" rx="2" fill="#a78bfa"/>
+    <text x="532" y="86" fill="#ffffff" font-size="44" font-weight="800">99.99%</text>
+    <text x="532" y="116" fill="#94a3b8" font-size="14">uptime through ~60% growth</text>
+
+    <rect x="762" y="0" width="238" height="150" rx="16" fill="#0b1026"/>
+    <rect class="bar" x="786" y="28" width="60" height="4" rx="2" fill="#fbbf24"/>
+    <text x="786" y="86" fill="#ffffff" font-size="44" font-weight="800">~20%</text>
+    <text x="786" y="116" fill="#94a3b8" font-size="14">lower cloud spend via FinOps</text>
+  </g>
+</svg>

@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 340" width="1000" height="340" role="img" aria-label="Platform stack: infrastructure as code, Kubernetes, observability">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f8fafc"/>
+      <stop offset="1" stop-color="#eef2ff"/>
+    </linearGradient>
+    <clipPath id="frame"><rect width="1000" height="340" rx="18"/></clipPath>
+  </defs>
+  <style>
+    .t { font-family: -apple-system, "Segoe UI", Helvetica, Arial, sans-serif; }
+    .l1 { animation: float 5s ease-in-out infinite; }
+    .l2 { animation: float 5s ease-in-out infinite .4s; }
+    .l3 { animation: float 5s ease-in-out infinite .8s; }
+    @keyframes float { 0%,100% { transform: translateY(0) } 50% { transform: translateY(-6px) } }
+    .dot { animation: pulse 2.4s ease-in-out infinite; }
+    .d2 { animation-delay: .8s } .d3 { animation-delay: 1.6s }
+    @keyframes pulse { 0%,100% { opacity: .35 } 50% { opacity: 1 } }
+  </style>
+
+  <g clip-path="url(#frame)">
+    <rect width="1000" height="340" fill="url(#bg)"/>
+
+    <!-- bottom: IaC -->
+    <g class="l1">
+      <path d="M120 270 L230 325 L230 343 L120 288Z" fill="#1e3a8a"/>
+      <path d="M230 325 L340 270 L340 288 L230 343Z" fill="#172554"/>
+      <path d="M120 270 L230 215 L340 270 L230 325Z" fill="#3b82f6"/>
+      <g stroke="#bfdbfe" stroke-width="1.5" fill="none" opacity="0.8">
+        <path d="M175 270 L230 242.5 L285 270 L230 297.5Z"/>
+        <path d="M230 242.5 V297.5 M175 270 H285"/>
+      </g>
+    </g>
+
+    <!-- middle: Kubernetes -->
+    <g class="l2">
+      <path d="M120 190 L230 245 L230 263 L120 208Z" fill="#0f766e"/>
+      <path d="M230 245 L340 190 L340 208 L230 263Z" fill="#134e4a"/>
+      <path d="M120 190 L230 135 L340 190 L230 245Z" fill="#14b8a6"/>
+      <g fill="#ccfbf1">
+        <path d="M200 175 l12 -6 l12 6 l-12 6Z"/><path d="M236 175 l12 -6 l12 6 l-12 6Z"/>
+        <path d="M218 193 l12 -6 l12 6 l-12 6Z"/><path d="M182 193 l12 -6 l12 6 l-12 6Z"/>
+        <path d="M254 193 l12 -6 l12 6 l-12 6Z"/><path d="M218 211 l12 -6 l12 6 l-12 6Z"/>
+      </g>
+    </g>
+
+    <!-- top: Observability -->
+    <g class="l3">
+      <path d="M120 110 L230 165 L230 183 L120 128Z" fill="#b45309"/>
+      <path d="M230 165 L340 110 L340 128 L230 183Z" fill="#78350f"/>
+      <path d="M120 110 L230 55 L340 110 L230 165Z" fill="#f59e0b"/>
+      <polyline points="165,118 195,104 215,120 240,88 262,108 295,94" fill="none" stroke="#fffbeb" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+    </g>
+
+    <!-- labels -->
+    <g stroke="#94a3b8" stroke-width="1.2" stroke-dasharray="3 4">
+      <line x1="350" y1="105" x2="430" y2="105"/>
+      <line x1="350" y1="185" x2="430" y2="185"/>
+      <line x1="350" y1="265" x2="430" y2="265"/>
+    </g>
+    <circle class="dot" cx="440" cy="105" r="6" fill="#f59e0b"/>
+    <circle class="dot d2" cx="440" cy="185" r="6" fill="#14b8a6"/>
+    <circle class="dot d3" cx="440" cy="265" r="6" fill="#3b82f6"/>
+
+    <g class="t">
+      <text x="462" y="100" fill="#0f172a" font-size="22" font-weight="700">Observability</text>
+      <text x="462" y="124" fill="#475569" font-size="15">Datadog · OpenTelemetry · Alloy · SLOs that teams own</text>
+      <text x="462" y="180" fill="#0f172a" font-size="22" font-weight="700">Kubernetes &amp; GitOps</text>
+      <text x="462" y="204" fill="#475569" font-size="15">EKS · AKS · GKE · Helm · autoscaling done safely</text>
+      <text x="462" y="260" fill="#0f172a" font-size="22" font-weight="700">Infrastructure as Code</text>
+      <text x="462" y="284" fill="#475569" font-size="15">Terraform · Pulumi · AWS CDK (Python) · CI/CD</text>
+      <text x="462" y="44" fill="#6366f1" font-size="13" font-weight="700" letter-spacing="2">WHAT I BUILD</text>
+    </g>
+  </g>
+</svg>

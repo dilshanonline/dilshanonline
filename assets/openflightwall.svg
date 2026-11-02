@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 300" width="1000" height="300" role="img" aria-label="Illustration of an OpenFlightWall-style flight card with a radar">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b1220"/>
+      <stop offset="1" stop-color="#14213d"/>
+    </linearGradient>
+    <linearGradient id="sweep" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#22d3ee" stop-opacity="0"/>
+      <stop offset="1" stop-color="#22d3ee" stop-opacity="0.45"/>
+    </linearGradient>
+    <clipPath id="frame"><rect width="1000" height="300" rx="18"/></clipPath>
+  </defs>
+  <style>
+    .t { font-family: -apple-system, "Segoe UI", Helvetica, Arial, sans-serif; }
+    .m { font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace; }
+    .radar { transform-origin: 850px 150px; animation: spin 4s linear infinite; }
+    @keyframes spin { to { transform: rotate(360deg) } }
+    .blip { animation: ping 4s ease-out infinite; }
+    .b2 { animation-delay: 1.3s; } .b3 { animation-delay: 2.6s; }
+    @keyframes ping { 0% { opacity: 1 } 70%,100% { opacity: .15 } }
+    .fly { animation: travel 6s ease-in-out infinite alternate; }
+    @keyframes travel { from { transform: translateX(0) } to { transform: translateX(40px) } }
+  </style>
+
+  <g clip-path="url(#frame)">
+    <rect width="1000" height="300" fill="url(#bg)"/>
+
+    <!-- clock -->
+    <text class="t" x="48" y="70" fill="#94a3b8" font-size="14" font-weight="600" letter-spacing="2">OVERHEAD NOW</text>
+    <text class="m" x="48" y="122" fill="#ffffff" font-size="44" font-weight="700">14:42</text>
+
+    <!-- route -->
+    <text class="t" x="48" y="186" fill="#ffffff" font-size="30" font-weight="700">AMS</text>
+    <text class="t" x="48" y="206" fill="#94a3b8" font-size="13">Amsterdam</text>
+    <text class="t" x="600" y="186" fill="#ffffff" font-size="30" font-weight="700" text-anchor="end">LHR</text>
+    <text class="t" x="600" y="206" fill="#94a3b8" font-size="13" text-anchor="end">London</text>
+
+    <line x1="130" y1="176" x2="500" y2="176" stroke="#334155" stroke-width="2" stroke-dasharray="4 6"/>
+    <rect x="130" y="174" width="232" height="4" rx="2" fill="#22d3ee"/>
+    <g class="fly" fill="#fbbf24" transform="translate(0 0)">
+      <g transform="translate(355 176)">
+        <path d="M-12,-1.6 H7 Q12,0 7,1.6 H-12 Q-14,0 -12,-1.6Z"/>
+        <path d="M-2,-1 L-7,-9 H-4 L4,-1Z"/><path d="M-2,1 L-7,9 H-4 L4,1Z"/>
+        <path d="M-10,-1 L-13,-5 H-11 L-7,-1Z"/><path d="M-10,1 L-13,5 H-11 L-7,1Z"/>
+      </g>
+    </g>
+
+    <!-- stat tiles -->
+    <g class="t">
+      <rect x="48" y="226" width="168" height="48" rx="10" fill="#ffffff" fill-opacity="0.06"/>
+      <text x="64" y="245" fill="#94a3b8" font-size="11" font-weight="600" letter-spacing="1">ALTITUDE</text>
+      <text x="64" y="265" fill="#ffffff" font-size="16" font-weight="700">34,000 ft</text>
+      <rect x="228" y="226" width="168" height="48" rx="10" fill="#ffffff" fill-opacity="0.06"/>
+      <text x="244" y="245" fill="#94a3b8" font-size="11" font-weight="600" letter-spacing="1">SPEED</text>
+      <text x="244" y="265" fill="#ffffff" font-size="16" font-weight="700">468 kt</text>
+      <rect x="408" y="226" width="192" height="48" rx="10" fill="#ffffff" fill-opacity="0.06"/>
+      <text x="424" y="245" fill="#94a3b8" font-size="11" font-weight="600" letter-spacing="1">HEADING</text>
+      <text x="424" y="265" fill="#ffffff" font-size="16" font-weight="700">271° ▲ climbing</text>
+    </g>
+
+    <!-- radar -->
+    <g fill="none" stroke="#22d3ee" stroke-opacity="0.25">
+      <circle cx="850" cy="150" r="110"/>
+      <circle cx="850" cy="150" r="75"/>
+      <circle cx="850" cy="150" r="40"/>
+      <line x1="740" y1="150" x2="960" y2="150"/>
+      <line x1="850" y1="40" x2="850" y2="260"/>
+    </g>
+    <path class="radar" d="M850 150 L960 150 A110 110 0 0 0 927.8 72.2 Z" fill="url(#sweep)"/>
+    <g fill="#fbbf24">
+      <circle class="blip" cx="890" cy="110" r="5"/>
+      <circle class="blip b2" cx="800" cy="185" r="4"/>
+      <circle class="blip b3" cx="905" cy="205" r="4"/>
+      <circle class="blip b2" cx="815" cy="95" r="3.5"/>
+    </g>
+    <circle cx="850" cy="150" r="5" fill="#22d3ee"/>
+    <text class="t" x="850" y="285" fill="#64748b" font-size="12" text-anchor="middle">you are here</text>
+  </g>
+</svg>
