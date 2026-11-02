@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 300" width="1000" height="300" role="img" aria-label="Career flight path from capital markets support to senior DevOps for AI stroke care">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b1026"/>
+      <stop offset="1" stop-color="#1e2a6b"/>
+    </linearGradient>
+    <linearGradient id="trail" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#22d3ee" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#fbbf24"/>
+    </linearGradient>
+    <clipPath id="frame"><rect width="1000" height="300" rx="18"/></clipPath>
+    <path id="route" d="M70 230 C120 230 163 190 213 190 C263 190 307 215 357 215 C407 215 450 165 500 165 C550 165 593 185 643 185 C693 185 737 135 787 135 C837 135 880 105 930 105"/>
+  </defs>
+  <style>
+    .t { font-family: -apple-system, "Segoe UI", Helvetica, Arial, sans-serif; }
+    .ring { transform-origin: 930px 105px; animation: ping 2.2s ease-out infinite; }
+    @keyframes ping { 0% { transform: scale(.6); opacity: .9 } 100% { transform: scale(2.4); opacity: 0 } }
+  </style>
+
+  <g clip-path="url(#frame)">
+    <rect width="1000" height="300" fill="url(#bg)"/>
+    <g fill="#ffffff" opacity="0.5">
+      <circle cx="120" cy="60" r="1"/><circle cx="380" cy="40" r="1.2"/><circle cx="610" cy="70" r="1"/>
+      <circle cx="840" cy="40" r="1.2"/><circle cx="520" cy="270" r="1"/><circle cx="260" cy="280" r="1"/>
+    </g>
+
+    <text class="t" x="40" y="46" fill="#a5b4fc" font-size="13" font-weight="700" letter-spacing="2">FLIGHT PATH · 10+ YEARS</text>
+
+    <use href="#route" fill="none" stroke="url(#trail)" stroke-width="3" stroke-linecap="round" stroke-dasharray="2 8"/>
+
+    <!-- waypoints -->
+    <g fill="#0b1026" stroke="#22d3ee" stroke-width="2.5">
+      <circle cx="70" cy="230" r="6"/><circle cx="213" cy="190" r="6"/><circle cx="357" cy="215" r="6"/>
+      <circle cx="500" cy="165" r="6"/><circle cx="643" cy="185" r="6"/><circle cx="787" cy="135" r="6"/>
+    </g>
+    <circle class="ring" cx="930" cy="105" r="8" fill="none" stroke="#fbbf24" stroke-width="2"/>
+    <circle cx="930" cy="105" r="7" fill="#fbbf24"/>
+
+    <!-- plane -->
+    <g fill="#ffffff">
+      <path d="M-14,-1.8 H8 Q14,0 8,1.8 H-14 Q-16,0 -14,-1.8Z"/>
+      <path d="M-2,-1.4 L-8,-10 H-5 L5,-1.4Z"/><path d="M-2,1.4 L-8,10 H-5 L5,1.4Z"/>
+      <path d="M-11,-1.4 L-15,-5.5 H-13 L-8,-1.4Z"/><path d="M-11,1.4 L-15,5.5 H-13 L-8,1.4Z"/>
+      <animateMotion dur="9s" repeatCount="indefinite" rotate="auto" keyPoints="0;1;1" keyTimes="0;0.85;1" calcMode="linear">
+        <mpath href="#route"/>
+      </animateMotion>
+    </g>
+
+    <!-- labels -->
+    <g class="t" font-size="14" font-weight="700" fill="#ffffff">
+      <text x="44" y="262">Capital Markets</text>
+      <text x="213" y="160" text-anchor="middle">Travel Systems</text>
+      <text x="357" y="247" text-anchor="middle">Analytics &amp; ML</text>
+      <text x="500" y="135" text-anchor="middle">Fintech</text>
+      <text x="643" y="217" text-anchor="middle">Auctions &amp; Auto</text>
+      <text x="787" y="105" text-anchor="middle">E-commerce</text>
+      <text x="966" y="137" text-anchor="end" fill="#fbbf24">AI Stroke Care</text>
+    </g>
+    <g class="t" font-size="12" fill="#94a3b8">
+      <text x="44" y="279">App Support</text>
+      <text x="213" y="176" text-anchor="middle">Systems Engineer</text>
+      <text x="357" y="264" text-anchor="middle">DevOps → Senior</text>
+      <text x="500" y="151" text-anchor="middle">DevOps Tech Lead</text>
+      <text x="643" y="234" text-anchor="middle">Senior SRE</text>
+      <text x="787" y="121" text-anchor="middle">Senior Cloud Engineer</text>
+      <text x="966" y="154" text-anchor="end">Senior DevOps · now</text>
+    </g>
+  </g>
+</svg>

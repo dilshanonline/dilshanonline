@@ -1,0 +1,204 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 280" width="1000" height="280" role="img" aria-label="Dilshan Wijesooriya, Senior Cloud and Platform Engineer">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0b1026"/>
+      <stop offset="0.55" stop-color="#1e2a6b"/>
+      <stop offset="1" stop-color="#5b3b8c"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.78" cy="1" r="0.6">
+      <stop offset="0" stop-color="#f59e0b" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#f59e0b" stop-opacity="0"/>
+    </radialGradient>
+    <clipPath id="frame"><rect width="1000" height="280" rx="18"/></clipPath>
+    <path id="flight" d="M 440 225 C 600 120, 780 150, 1060 30"/>
+  </defs>
+
+  <style>
+    .t { font-family: -apple-system, "Segoe UI", Helvetica, Arial, sans-serif; }
+    .star { animation: twinkle 3s ease-in-out infinite; }
+    .s2 { animation-delay: 1s; } .s3 { animation-delay: 2s; }
+    @keyframes twinkle { 0%,100% { opacity: .25 } 50% { opacity: 1 } }
+    .cloudA { animation: drift 40s linear infinite; }
+    .cloudB { animation: drift 60s linear infinite; }
+    @keyframes drift { from { transform: translateX(0) } to { transform: translateX(-1100px) } }
+  </style>
+
+  <g clip-path="url(#frame)">
+    <rect width="1000" height="280" fill="url(#sky)"/>
+    <rect width="1000" height="280" fill="url(#glow)"/>
+
+    <!-- stars -->
+    <g fill="#fff">
+      <circle class="star" cx="60" cy="30" r="1.4"/>
+      <circle class="star s2" cx="180" cy="18" r="1"/>
+      <circle class="star s3" cx="320" cy="40" r="1.3"/>
+      <circle class="star" cx="470" cy="22" r="1"/>
+      <circle class="star s2" cx="560" cy="55" r="1.5"/>
+      <circle class="star s3" cx="690" cy="26" r="1.1"/>
+      <circle class="star" cx="820" cy="48" r="1.3"/>
+      <circle class="star s2" cx="930" cy="20" r="1"/>
+      <circle class="star s3" cx="250" cy="70" r="0.9"/>
+      <circle class="star" cx="640" cy="90" r="0.9"/>
+    </g>
+
+    <!-- drifting clouds -->
+    <g class="cloudA" fill="#ffffff" opacity="0.10">
+      <g transform="translate(700 95)"><ellipse cx="0" cy="0" rx="60" ry="14"/><ellipse cx="-20" cy="-9" rx="28" ry="14"/><ellipse cx="18" cy="-8" rx="24" ry="12"/></g>
+      <g transform="translate(1800 95)"><ellipse cx="0" cy="0" rx="60" ry="14"/><ellipse cx="-20" cy="-9" rx="28" ry="14"/><ellipse cx="18" cy="-8" rx="24" ry="12"/></g>
+    </g>
+    <g class="cloudB" fill="#ffffff" opacity="0.07">
+      <g transform="translate(420 150)"><ellipse cx="0" cy="0" rx="90" ry="16"/><ellipse cx="-30" cy="-10" rx="36" ry="16"/><ellipse cx="25" cy="-9" rx="30" ry="14"/></g>
+      <g transform="translate(1520 150)"><ellipse cx="0" cy="0" rx="90" ry="16"/><ellipse cx="-30" cy="-10" rx="36" ry="16"/><ellipse cx="25" cy="-9" rx="30" ry="14"/></g>
+    </g>
+
+    <!-- contrail + plane -->
+    <use href="#flight" fill="none" stroke="#ffffff" stroke-opacity="0.25" stroke-width="1.5" stroke-dasharray="6 9"/>
+    <g fill="#ffffff">
+      <path d="M-22,-2.6 H12 Q22,0 12,2.6 H-22 Q-25,0 -22,-2.6Z"/>
+      <path d="M-3,-2 L-12,-15 H-7 L7,-2Z"/>
+      <path d="M-3,2 L-12,15 H-7 L7,2Z"/>
+      <path d="M-18,-2 L-24,-8 H-21 L-14,-2Z"/>
+      <path d="M-18,2 L-24,8 H-21 L-14,2Z"/>
+      <animateMotion dur="11s" repeatCount="indefinite" rotate="auto">
+        <mpath href="#flight"/>
+      </animateMotion>
+    </g>
+
+    <!-- Amsterdam canal houses -->
+    <g fill="#0a0e22">
+      <path d="M0 264 V226 Q0 212 11.4 214 L19.0 206 L26.599999999999998 214 Q38 212 38 226 V264Z"/>
+      <path d="M38 264 V224 L61.0 210 L84 224 V264Z"/>
+      <path d="M84 264 V227 H95.5 V217 L107.0 209 L118.5 217 V227 H130 V264Z"/>
+      <path d="M130 264 V229 H138.5 V219 L147.0 211 L155.5 219 V229 H164 V264Z"/>
+      <path d="M164 264 V212 H171.5 V202 L179.0 194 L186.5 202 V212 H194 V264Z"/>
+      <path d="M196 264 V216 Q196 202 207.4 204 L215.0 196 L222.6 204 Q234 202 234 216 V264Z"/>
+      <path d="M236 264 V207 Q236 193 247.4 195 L255.0 187 L262.6 195 Q274 193 274 207 V264Z"/>
+      <path d="M274 264 V212 H280.9 V206 H287.8 V200 H306.2 V206 H313.1 V212 H320 V264Z"/>
+      <path d="M321 264 V208 L342.0 194 L363 208 V264Z"/>
+      <path d="M363 264 V219 H373.5 V209 L384.0 201 L394.5 209 V219 H405 V264Z"/>
+      <path d="M407 264 V225 Q407 211 416.0 213 L422.0 205 L428.0 213 Q437 211 437 225 V264Z"/>
+      <path d="M438 264 V219 Q438 205 450.6 207 L459.0 199 L467.4 207 Q480 205 480 219 V264Z"/>
+      <path d="M480 264 V221 L499.0 207 L518 221 V264Z"/>
+      <path d="M518 264 V202 Q518 188 530.6 190 L539.0 182 L547.4 190 Q560 188 560 202 V264Z"/>
+      <path d="M560 264 V230 H567.5 V220 L575.0 212 L582.5 220 V230 H590 V264Z"/>
+      <path d="M590 264 V218 H601.5 V208 L613.0 200 L624.5 208 V218 H636 V264Z"/>
+      <path d="M638 264 V215 H644.3 V209 H650.6 V203 H667.4 V209 H673.7 V215 H680 V264Z"/>
+      <path d="M680 264 V214 H685.1 V208 H690.2 V202 H703.8 V208 H708.9 V214 H714 V264Z"/>
+      <path d="M715 264 V219 H726.5 V209 L738.0 201 L749.5 209 V219 H761 V264Z"/>
+      <path d="M761 264 V204 Q761 190 771.2 192 L778.0 184 L784.8 192 Q795 190 795 204 V264Z"/>
+      <path d="M796 264 V205 H802.3 V199 H808.6 V193 H825.4 V199 H831.7 V205 H838 V264Z"/>
+      <path d="M838 264 V210 H844.3 V204 H850.6 V198 H867.4 V204 H873.7 V210 H880 V264Z"/>
+      <path d="M882 264 V217 H887.1 V211 H892.2 V205 H905.8 V211 H910.9 V217 H916 V264Z"/>
+      <path d="M916 264 V226 L933.0 212 L950 226 V264Z"/>
+      <path d="M952 264 V226 H961.5 V216 L971.0 208 L980.5 216 V226 H990 V264Z"/>
+      <path d="M990 264 V203 H1000.5 V193 L1011.0 185 L1021.5 193 V203 H1032 V264Z"/>
+    </g>
+    <g>
+      <rect x="23.6" y="234" width="6.8" height="7" fill="#fbbf24" fill-opacity="0.75"/>
+      <rect x="23.6" y="247" width="6.8" height="7" fill="#c7d2fe" fill-opacity="0.12"/>
+      <rect x="48.1" y="232" width="8.3" height="7" fill="#fbbf24" fill-opacity="0.75"/>
+      <rect x="66.5" y="232" width="8.3" height="7" fill="#c7d2fe" fill-opacity="0.12"/>
+      <rect x="48.1" y="245" width="8.3" height="7" fill="#c7d2fe" fill-opacity="0.12"/>
+      <rect x="94.1" y="248" width="8.3" height="7" fill="#fbbf24" fill-opacity="0.75"/>
+      <rect x="137.5" y="237" width="6.1" height="7" fill="#c7d2fe" fill-opacity="0.12"/>
+      <rect x="151.1" y="237" width="6.1" height="7" fill="#fbbf24" fill-opacity="0.75"/>
+      <rect x="137.5" y="250" width="6.1" height="7" fill="#fbbf24" fill-opacity="0.75"/>
+      <rect x="151.1" y="250" width="6.1" height="7" fill="#c7d2fe" fill-opacity="0.12"/>
+      <rect x="170.6" y="220" width="5.4" height="7" fill="#c7d2fe" fill-opacity="0.12"/>
+      <rect x="170.6" y="233" width="5.4" height="7" fill="#fbbf24" fill-opacity="0.75"/>
+      <rect x="182.6" y="233" width="5.4" height="7" fill="#fbbf24" fill-opacity="0.75"/>
+      <rect x="170.6" y="246" width="5.4" height="7" fill="#c7d2fe" fill-opacity="0.12"/>
+      <rect x="204.4" y="224" width="6.8" height="7" fill="#c7d2fe" fill-opacity="0.12"/>
+      <rect x="219.6" y="224" width="6.8" height="7" fill="#c7d2fe" fill-opacity="0.12"/>
+      <rect x="204.4" y="237" width="6.8" height="7" fill="#fbbf24" fill-opacity="0.75"/>
+      <rect x="204.4" y="250" width="6.8" height="7" fill="#fbbf24" fill-opacity="0.75"/>
+      <rect x="219.6" y="250" width="6.8" height="7" fill="#c7d2fe" fill-opacity="0.12"/>
+      <rect x="244.4" y="215" width="6.8" height="7" fill="#c7d2fe" fill-opacity="0.12"/>
+      <rect x="244.4" y="228" width="6.8" height="7" fill="#fbbf24" fill-opacity="0.75"/>
+      <rect x="259.6" y="228" width="6.8" height="7" fill="#c7d2fe" fill-opacity="0.12"/>
+      <rect x="259.6" y="241" width="6.8" height="7" fill="#fbbf24" fill-opacity="0.75"/>
+      <rect x="259.6" y="254" width="6.8" height="7" fill="#fbbf24" fill-opacity="0.75"/>
+      <rect x="284.1" y="220" width="8.3" height="7" fill="#c7d2fe" fill-opacity="0.12"/>
+      <rect x="302.5" y="220" width="8.3" height="7" fill="#c7d2fe" fill-opacity="0.12"/>
+      <rect x="284.1" y="246" width="8.3" height="7" fill="#fbbf24" fill-opacity="0.75"/>
+      <rect x="302.5" y="246" width="8.3" height="7" fill="#fbbf24" fill-opacity="0.75"/>
+      <rect x="330.2" y="216" width="7.6" height="7" fill="#fbbf24" fill-opacity="0.75"/>
+      <rect x="347.0" y="242" width="7.6" height="7" fill="#c7d2fe" fill-opacity="0.12"/>
+      <rect x="330.2" y="255" width="7.6" height="7" fill="#c7d2fe" fill-opacity="0.12"/>
+      <rect x="372.2" y="240" width="7.6" height="7" fill="#c7d2fe" fill-opacity="0.12"/>
+      <rect x="389.0" y="240" width="7.6" height="7" fill="#c7d2fe" fill-opacity="0.12"/>
+      <rect x="389.0" y="253" width="7.6" height="7" fill="#c7d2fe" fill-opacity="0.12"/>
+      <rect x="413.6" y="233" width="5.4" height="7" fill="#c7d2fe" fill-opacity="0.12"/>
+      <rect x="425.6" y="233" width="5.4" height="7" fill="#c7d2fe" fill-opacity="0.12"/>
+      <rect x="413.6" y="246" width="5.4" height="7" fill="#fbbf24" fill-opacity="0.75"/>
+      <rect x="425.6" y="246" width="5.4" height="7" fill="#c7d2fe" fill-opacity="0.12"/>
+      <rect x="464.0" y="227" width="7.6" height="7" fill="#fbbf24" fill-opacity="0.75"/>
+      <rect x="447.2" y="240" width="7.6" height="7" fill="#fbbf24" fill-opacity="0.75"/>
+      <rect x="464.0" y="240" width="7.6" height="7" fill="#c7d2fe" fill-opacity="0.12"/>
+      <rect x="447.2" y="253" width="7.6" height="7" fill="#c7d2fe" fill-opacity="0.12"/>
+      <rect x="488.4" y="229" width="6.8" height="7" fill="#fbbf24" fill-opacity="0.75"/>
+      <rect x="503.6" y="242" width="6.8" height="7" fill="#c7d2fe" fill-opacity="0.12"/>
+      <rect x="488.4" y="255" width="6.8" height="7" fill="#fbbf24" fill-opacity="0.75"/>
+      <rect x="527.2" y="210" width="7.6" height="7" fill="#c7d2fe" fill-opacity="0.12"/>
+      <rect x="544.0" y="210" width="7.6" height="7" fill="#c7d2fe" fill-opacity="0.12"/>
+      <rect x="544.0" y="223" width="7.6" height="7" fill="#c7d2fe" fill-opacity="0.12"/>
+      <rect x="527.2" y="236" width="7.6" height="7" fill="#c7d2fe" fill-opacity="0.12"/>
+      <rect x="527.2" y="249" width="7.6" height="7" fill="#c7d2fe" fill-opacity="0.12"/>
+      <rect x="544.0" y="249" width="7.6" height="7" fill="#fbbf24" fill-opacity="0.75"/>
+      <rect x="578.6" y="251" width="5.4" height="7" fill="#fbbf24" fill-opacity="0.75"/>
+      <rect x="600.1" y="252" width="8.3" height="7" fill="#fbbf24" fill-opacity="0.75"/>
+      <rect x="647.2" y="223" width="7.6" height="7" fill="#fbbf24" fill-opacity="0.75"/>
+      <rect x="664.0" y="223" width="7.6" height="7" fill="#fbbf24" fill-opacity="0.75"/>
+      <rect x="647.2" y="236" width="7.6" height="7" fill="#c7d2fe" fill-opacity="0.12"/>
+      <rect x="664.0" y="236" width="7.6" height="7" fill="#c7d2fe" fill-opacity="0.12"/>
+      <rect x="664.0" y="249" width="7.6" height="7" fill="#fbbf24" fill-opacity="0.75"/>
+      <rect x="687.5" y="222" width="6.1" height="7" fill="#fbbf24" fill-opacity="0.75"/>
+      <rect x="687.5" y="235" width="6.1" height="7" fill="#fbbf24" fill-opacity="0.75"/>
+      <rect x="725.1" y="227" width="8.3" height="7" fill="#c7d2fe" fill-opacity="0.12"/>
+      <rect x="743.5" y="227" width="8.3" height="7" fill="#c7d2fe" fill-opacity="0.12"/>
+      <rect x="782.1" y="212" width="6.1" height="7" fill="#c7d2fe" fill-opacity="0.12"/>
+      <rect x="782.1" y="225" width="6.1" height="7" fill="#c7d2fe" fill-opacity="0.12"/>
+      <rect x="768.5" y="238" width="6.1" height="7" fill="#fbbf24" fill-opacity="0.75"/>
+      <rect x="782.1" y="238" width="6.1" height="7" fill="#fbbf24" fill-opacity="0.75"/>
+      <rect x="768.5" y="251" width="6.1" height="7" fill="#c7d2fe" fill-opacity="0.12"/>
+      <rect x="782.1" y="251" width="6.1" height="7" fill="#c7d2fe" fill-opacity="0.12"/>
+      <rect x="822.0" y="213" width="7.6" height="7" fill="#c7d2fe" fill-opacity="0.12"/>
+      <rect x="805.2" y="226" width="7.6" height="7" fill="#c7d2fe" fill-opacity="0.12"/>
+      <rect x="822.0" y="226" width="7.6" height="7" fill="#c7d2fe" fill-opacity="0.12"/>
+      <rect x="805.2" y="239" width="7.6" height="7" fill="#c7d2fe" fill-opacity="0.12"/>
+      <rect x="822.0" y="239" width="7.6" height="7" fill="#c7d2fe" fill-opacity="0.12"/>
+      <rect x="864.0" y="218" width="7.6" height="7" fill="#fbbf24" fill-opacity="0.75"/>
+      <rect x="889.5" y="225" width="6.1" height="7" fill="#fbbf24" fill-opacity="0.75"/>
+      <rect x="903.1" y="251" width="6.1" height="7" fill="#fbbf24" fill-opacity="0.75"/>
+      <rect x="923.5" y="234" width="6.1" height="7" fill="#fbbf24" fill-opacity="0.75"/>
+      <rect x="937.1" y="247" width="6.1" height="7" fill="#fbbf24" fill-opacity="0.75"/>
+      <rect x="960.4" y="234" width="6.8" height="7" fill="#fbbf24" fill-opacity="0.75"/>
+      <rect x="975.6" y="247" width="6.8" height="7" fill="#fbbf24" fill-opacity="0.75"/>
+      <rect x="1016.0" y="211" width="7.6" height="7" fill="#c7d2fe" fill-opacity="0.12"/>
+      <rect x="999.2" y="224" width="7.6" height="7" fill="#c7d2fe" fill-opacity="0.12"/>
+      <rect x="1016.0" y="224" width="7.6" height="7" fill="#c7d2fe" fill-opacity="0.12"/>
+      <rect x="999.2" y="237" width="7.6" height="7" fill="#c7d2fe" fill-opacity="0.12"/>
+      <rect x="999.2" y="250" width="7.6" height="7" fill="#c7d2fe" fill-opacity="0.12"/>
+      <rect x="1016.0" y="250" width="7.6" height="7" fill="#c7d2fe" fill-opacity="0.12"/>
+    </g>
+    <!-- canal -->
+    <rect y="264" width="1000" height="16" fill="#070a18"/>
+    <g stroke="#fbbf24" stroke-opacity="0.25" stroke-width="1.5">
+      <line x1="120" y1="270" x2="150" y2="270"/><line x1="330" y1="273" x2="352" y2="273"/><line x1="560" y1="270" x2="596" y2="270"/><line x1="790" y1="274" x2="812" y2="274"/>
+    </g>
+
+    <!-- text -->
+    <text class="t" x="48" y="92" fill="#ffffff" font-size="40" font-weight="700">Dilshan Wijesooriya</text>
+    <text class="t" x="50" y="126" fill="#c7d2fe" font-size="19">Senior Cloud &amp; Platform Engineer · Amsterdam</text>
+    <g class="t" font-size="13" font-weight="600" fill="#e0e7ff">
+      <rect x="50" y="146" width="104" height="26" rx="13" fill="#ffffff" fill-opacity="0.12"/>
+      <text x="102" y="164" text-anchor="middle">Multi-cloud</text>
+      <rect x="162" y="146" width="104" height="26" rx="13" fill="#ffffff" fill-opacity="0.12"/>
+      <text x="214" y="164" text-anchor="middle">Kubernetes</text>
+      <rect x="274" y="146" width="96" height="26" rx="13" fill="#ffffff" fill-opacity="0.12"/>
+      <text x="322" y="164" text-anchor="middle">Terraform</text>
+      <rect x="378" y="146" width="118" height="26" rx="13" fill="#ffffff" fill-opacity="0.12"/>
+      <text x="437" y="164" text-anchor="middle">Observability</text>
+    </g>
+  </g>
+</svg>
