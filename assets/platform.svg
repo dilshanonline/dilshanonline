@@ -63,7 +63,7 @@
 
     <g class="t">
       <text x="462" y="100" fill="#0f172a" font-size="22" font-weight="700">Observability</text>
-      <text x="462" y="124" fill="#475569" font-size="15">Datadog · OpenTelemetry · Alloy · SLOs that teams own</text>
+      <text x="462" y="124" fill="#475569" font-size="15">OpenTelemetry · Alloy · metrics, logs &amp; traces · SLOs</text>
       <text x="462" y="180" fill="#0f172a" font-size="22" font-weight="700">Kubernetes &amp; GitOps</text>
       <text x="462" y="204" fill="#475569" font-size="15">EKS · AKS · GKE · Helm · autoscaling done safely</text>
       <text x="462" y="260" fill="#0f172a" font-size="22" font-weight="700">Infrastructure as Code</text>

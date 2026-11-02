@@ -4,12 +4,12 @@
 
 ### Hi, I'm Dilshan 👋
 
-Senior Cloud & DevOps Engineer based in Rotterdam, with 10+ years of building and running cloud platforms on AWS, Azure and GCP. These days I lead the infrastructure behind an AI-powered stroke care platform at [Nicolab](https://nicolab.com), where faster, reliable systems help hospitals act quicker for patients.
+Cloud Platform Engineer based in Amsterdam, with 10+ years of designing and leading scalable, secure cloud platforms across AWS, Azure and GCP. These days I lead the infrastructure behind an AI-powered stroke care platform at [Nicolab](https://nicolab.com).
 
-I focus on platforms that scale teams, not just systems: shared infrastructure, sensible standards and good tooling, so engineers can ship safely without thinking about the plumbing. Outside of work I watch planes, which is how my favourite side project started.
+I specialise in Kubernetes and platform engineering, and I've owned platform architecture and strategy supporting 70+ engineering teams and more than 500 engineers through automation, standardisation and governance. What I care about most is reliability, security, cost efficiency and developer experience. Outside of work I watch planes, which is how my favourite side project started.
 
 <p align="center">
-  <img src="assets/impact.svg" alt="10+ years, 70+ teams on one EKS platform, 99.99% uptime, ~20% lower cloud spend" width="100%">
+  <img src="assets/impact.svg" alt="10+ years, 70+ teams and 500+ engineers supported, 99.99% uptime, ~20% lower cloud spend" width="100%">
 </p>
 
 <p align="center">
@@ -46,7 +46,6 @@ I started out supporting trading platforms, moved into systems engineering for t
 I write on [Medium](https://dilshanw.medium.com/) about lessons from real migrations and incidents. A few favourites:
 
 - [We broke our EKS Cluster Autoscaler during the AL2023 migration, and fixed it](https://dilshanw.medium.com/we-broke-our-eks-cluster-autoscaler-during-amazon-al2023-migration-and-fixed-it-heres-what-we-5c835299f986) – IRSA, RBAC and why AMI upgrades are application changes.
-- [Tags-based retention in Datadog](https://dilshanw.medium.com/tags-based-retention-in-datadog-how-we-gave-log-ownership-back-to-teams-without-blowing-the-f15346de8a68) – giving log ownership back to teams without blowing the budget.
 - [Migrating container images from GCP to AWS ECR safely](https://dilshanw.medium.com/migrating-container-images-from-gcp-to-aws-ecr-safely-and-efficiently-eb537f7a50c3) – the story behind the migration tool.
 - [OpenFlightWall: how a plane-watching habit became a free flight dashboard](https://dilshanw.medium.com/openflightwall-how-i-turned-my-plane-watching-habit-into-a-free-flight-dashboard-3b72536adb31)
 
@@ -56,4 +55,4 @@ MSc in Information Technology (Cyber Security) and BSc (Hons) in Information Tec
 
 ### 📫 Find me
 
-[Website](https://dilshanwijesooriya.me/) · [Medium](https://dilshanw.medium.com/) · [LinkedIn](https://www.linkedin.com/in/dilshanwijesooriya/) · [X](https://twitter.com/dilshanonline)
+[Email](mailto:info@dilshanwijesooriya.me) · [Website](https://dilshanwijesooriya.me/) · [Medium](https://dilshanw.medium.com/) · [LinkedIn](https://www.linkedin.com/in/dilshanwijesooriya/) · [X](https://twitter.com/dilshanonline)
