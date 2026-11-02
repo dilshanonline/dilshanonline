@@ -19,10 +19,10 @@ I specialise in Kubernetes and platform engineering, and I've owned platform arc
 ### 🛫 How I got here
 
 <p align="center">
-  <img src="assets/career-path.svg" alt="Career path: capital markets, travel systems, analytics and ML, supply chain, auctions and automotive, e-commerce, AI stroke care" width="100%">
+  <img src="assets/career-path.svg" alt="Career path: capital markets, travel systems, analytics and ML, fintech, auctions and automotive, e-commerce, AI stroke care" width="100%">
 </p>
 
-I started out supporting trading platforms, moved into systems engineering for travel, and grew into DevOps on analytics and machine-learning products. From there I led DevOps for supply-chain systems, drove reliability work as an SRE for an auctions and automotive platform, and ran a shared EKS platform for a large European e-commerce company. Today I own the multi-cloud Kubernetes setup at Nicolab, migrating from GCP to AWS along the way.
+I started out supporting trading platforms, moved into systems engineering for travel, and grew into DevOps on analytics and machine-learning products. From there I led DevOps for fintech systems, drove reliability work as an SRE for an auctions and automotive platform, and ran a shared EKS platform for a large European e-commerce company. Today I own the multi-cloud Kubernetes setup at Nicolab, migrating from GCP to AWS along the way.
 
 ---
 
